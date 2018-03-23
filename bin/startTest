@@ -1,0 +1,18 @@
+#!/bin/sh
+
+docker-machine start default
+
+eval "$(docker-machine env default)"
+
+docker kill evenid-api-test
+docker kill mongodb-api-test
+
+docker rm -v evenid-api-test
+docker rm -v mongodb-api-test
+
+docker build -t evenid-api .
+
+docker run -d --name mongodb-api-test mongo mongod --nojournal
+
+# docker run -it --link mongodb-api-test:mongodb --name evenid-api-test --entrypoint="/bin/bash" evenid-api
+docker run -i --link mongodb-api-test:mongodb --name evenid-api-test evenid-api "$1"

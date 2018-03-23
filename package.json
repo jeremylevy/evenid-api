@@ -1,0 +1,68 @@
+{
+  "name": "EvenIDAPI",
+  "version": "1.0.0",
+  "description": "EvenID API",
+  "main": "index.js",
+  "scripts": {
+    "testAppOnDocker": "./bin/startTest 'foreman start -f Procfile.test.app -p 64000 -e .env,.env.test'",
+    "testRoutesOnDocker": "./bin/startTest 'foreman start -f Procfile.test.routes -p 64000 -e .env,.env.test'",
+    "testOnDocker": "npm run testAppOnDocker && npm run testRoutesOnDocker",
+    "testAppOnStage": "foreman start -f Procfile.test.app -p 64000 -e .env,.env.test,.env.testOnStage",
+    "testRoutesOnStage": "foreman start -f Procfile.test.routes -p 64000 -e .env,.env.test,.env.testOnStage",
+    "testOnStage": "npm run testAppOnStage && npm run testRoutesOnStage",
+    "testApp": "foreman start -f Procfile.test.app -p 64000 -e .env,.env.test",
+    "testRoutes": "foreman start -f Procfile.test.routes -p 64000 -e .env,.env.test",
+    "test": "npm run testApp && npm run testRoutes",
+    "startDev": "foreman start -f Procfile.development -p 8000 -e .env,.env.development",
+    "startTestFromApp": "foreman start -f Procfile.testFromApp -p 7000 -e .env,.env.test,.env.testFromApp",
+    "deployOnStage": "./bin/deployOnStage",
+    "startOnStage": "foreman start -p 8000 -e .env,.env.stage",
+    "startTestFromAppOnStage": "foreman start -p 8000 -e .env,.env.test,.env.testFromApp,.env.testOnStage",
+    "startOnProd": "foreman start -p 8000 -e .env"
+  },
+  "author": "Jeremy Levy <jje.levy@gmail.com> (https://twitter.com/jeremy_levy)",
+  "license": "ISC",
+  "private": true,
+  "engines": {
+    "node": ">=0.10.26",
+    "npm": ">=1.4.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeremylevy/evenid-api"
+  },
+  "devDependencies": {
+    "gm": "^1.20.0",
+    "image-size": "^0.3.5",
+    "mocha": "^2.3.3",
+    "nock": "^2.13.0",
+    "nodemon": "^1.2.1",
+    "objectcompare": "^0.2.0",
+    "proxyquire": "^1.0.1",
+    "supertest": "^1.1.0"
+  },
+  "dependencies": {
+    "async": "^0.9.0",
+    "aws-sdk": "^2.0.9",
+    "bcrypt": "^0.8.5",
+    "body-parser": "^1.4.3",
+    "change-case": "^2.1.1",
+    "charlatan": "^0.1.9",
+    "clone": "^1.0.0",
+    "easyimage": "https://github.com/jeremylevy/node-easyimage/tarball/master",
+    "smartcrop-cli": "https://github.com/jeremylevy/smartcrop-cli/tarball/master",
+    "express": "^4.4.4",
+    "i18n-2": "^0.4.6",
+    "jade": "^1.9.2",
+    "moment": "^2.7.0",
+    "moment-timezone": "^0.4.0",
+    "mongoose": "^4.0.2",
+    "no-captcha": "^1.0.0",
+    "node-phonenumber": "^0.1.2",
+    "regexp-quote": "0.0.0",
+    "request": "^2.42.0",
+    "striptags": "^2.0.4",
+    "type-of-is": "^3.3.0",
+    "validator": "^3.16.0"
+  }
+}

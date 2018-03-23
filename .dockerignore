@@ -1,0 +1,23 @@
+# Git folder
+.git
+.gitignore
+
+# OSX files
+.DS_Store
+
+# Node modules
+node_modules
+
+# Sublime Text project files
+*.sublime-project
+*.sublime-workspace
+
+# Log files
+*.log
+
+# Binaries
+bin
+
+# Elastic Bean Stalk configuration
+.ebextensions
+.elasticbeanstalk

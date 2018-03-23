@@ -1,0 +1,11 @@
+[{
+    "full_name": "Test Test",
+    "address_line_1": "215 South Madison Avenue",
+    "address_line_2": "Fourth floor, apartment 4A",
+    "access_code": "1981",
+    "city": "Pasadena",
+    "state": "California",
+    "postal_code": "91101",
+    "country": "US",
+    "address_type": "residential"
+}]

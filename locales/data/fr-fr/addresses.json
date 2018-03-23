@@ -1,0 +1,11 @@
+[{
+    "full_name": "Test Test",
+    "address_line_1": "6 Place des Vosges",
+    "address_line_2": "4eme étage, appartement 18",
+    "access_code": "8733",
+    "city": "Paris",
+    "state": "",
+    "postal_code": "75004",
+    "country": "FR",
+    "address_type": "residential"
+}]

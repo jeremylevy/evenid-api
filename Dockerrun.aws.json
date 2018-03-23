@@ -1,0 +1,21 @@
+{
+    "AWSEBDockerrunVersion": "1",
+    
+    "Image": {
+        "Name": "evenid/api",
+        "Update": "true"
+    },
+    
+    "Authentication": {
+        "Bucket": "evenid-private",
+        "Key": "docker/config-1.7.json"
+    },
+
+    "Volumes": [],
+    
+    "Ports": [
+        {
+            "ContainerPort": "8000"
+        }
+    ]
+}

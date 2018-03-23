@@ -1,0 +1,22 @@
+{
+    "validate_email": [
+        "Bonjour,",
+        "Vous venez de demander la validation de votre adresse e-mail :",
+        "<strong>%s</strong>",
+        "Pour compléter votre demande, cliquez sur le lien ci-dessous :",
+        "<a href=\"%s\">%s</a>",
+        "Si vous n'avez pas demandé la validation de cette adresse, vous pouvez ignorer cet e-mail.",
+        "Avec tout l'amour du monde,",
+        "L'équipe %s"
+    ],
+
+    "recover_password": [
+        "Bonjour,",
+        "Vous venez de demander un nouveau mot de passe pour vous connecter sur %s.",
+        "Pour compléter votre demande, cliquez sur le lien ci-dessous :",
+        "<a href=\"%s\">%s</a>",
+        "Si vous n'avez pas demandé de nouveau mot de passe, vous pouvez ignorer cet e-mail.",
+        "Avec tout l'amour du monde,",
+        "L'équipe %s"
+    ]
+}

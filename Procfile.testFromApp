@@ -1,0 +1,1 @@
+nodemon: ./node_modules/.bin/nodemon --ignore 'locales/*.js' index.js

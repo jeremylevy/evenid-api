@@ -1,0 +1,1 @@
+mocha: ./node_modules/.bin/mocha --recursive --bail --colors --timeout 15000 --grep '^(?!GET|POST|PUT|DELETE|ALL).+$'
